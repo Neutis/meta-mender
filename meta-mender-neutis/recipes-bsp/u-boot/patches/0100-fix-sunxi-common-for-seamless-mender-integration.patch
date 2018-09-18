@@ -9,15 +9,16 @@ index 66244b6..93159fd 100644
 +# CONFIG_ENV_IS_IN_FAT is not set
 +CONFIG_ENV_IS_IN_MMC=y
 diff --git a/include/configs/sunxi-common.h b/include/configs/sunxi-common.h
-index b515e9b..db0f117 100644
+index b515e9b..97c2088 100644
 --- a/include/configs/sunxi-common.h
 +++ b/include/configs/sunxi-common.h
-@@ -524,4 +524,8 @@ extern int soft_i2c_gpio_scl;
+@@ -524,4 +524,9 @@ extern int soft_i2c_gpio_scl;
  #define CONFIG_EXTRA_ENV_SETTINGS
  #endif
  
 +#define CONFIG_BOOTCOUNT_LIMIT
 +#define CONFIG_BOOTCOUNT_ENV
++#undef CONFIG_SYS_MMC_ENV_DEV
 +#undef CONFIG_ENV_OFFSET
 +
  #endif /* _SUNXI_COMMON_CONFIG_H */
